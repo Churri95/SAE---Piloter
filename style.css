@@ -45,6 +45,83 @@ body {
   color: #ffcc00;
 }
 
+/* Section des véhicules */
+.vehicles {
+  padding: 3rem 2rem;
+  background-color: #fff;
+}
+
+.vehicles .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vehicles h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.vehicle-card {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-10px); /* Effet de survol */
+}
+
+.vehicle-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.vehicle-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.vehicle-card p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.vehicle-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.vehicle-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive : ajustement de la grille pour les petits écrans */
+@media (max-width: 768px) {
+  .vehicle-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .vehicle-card img {
+    height: 150px;
+  }
+}
+
 /* Section Services */
 .services {
   padding: 3rem 2rem;
