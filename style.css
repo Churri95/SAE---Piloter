@@ -1,4 +1,51 @@
-/* Section des services */
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Barre de navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Section Services */
 .services {
   padding: 3rem 2rem;
   background-color: #fff;
@@ -8,6 +55,11 @@
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .services-list {
@@ -29,22 +81,47 @@
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .service-card h3 {
-  margin: 1rem 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .service-card p {
   font-size: 1rem;
-  color: #333;
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f0f0; /* Couleur de fond */
-  color: #333; /* Couleur du texte */
+  color: #555;
 }
 
-h1, h2 {
-  color: #007bff; /* Couleur des titres */
+.service-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.service-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111;
+  color: #eee;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-card img {
+    height: 150px;
+  }
 }
