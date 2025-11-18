@@ -51,57 +51,157 @@ body {
   transform: scale(1.1); /* Effet de zoom */
 }
 
-/* Hero Image + Texte */
+/* HERO IMAGE + TEXTE */
 .hero {
   position: relative;
-  text-align: center;
-}
-
-.hero-image {
   width: 100%;
-  height: 450px;
-  object-fit: cover;
-  filter: brightness(60%);
+  height: 100vh; /* -> prend toute la hauteur de l’écran */
+  overflow: hidden;
 }
 
+/* image en arrière-plan plein écran */
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* bandeau translucide */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  z-index: 1;
+}
+
+/* texte centré */
 .hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+  text-align: center;
+  width: 80%;
+  z-index: 2;
+  animation: fadeInUp 1.2s ease-out both;
 }
 
+/* taille du texte */
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: 800;
   margin-bottom: 1rem;
-  font-weight: bold;
 }
 
 .hero-text p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
-/* Call-to-Action */
-.cta .btn {
-  padding: 15px 30px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 2rem;
-  transition: background-color 0.3s ease, transform 0.3s;
+/* animation d'apparition */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
-.cta .btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.1);
+
+
+/* SECTION À PROPOS */
+.presentation {
+  background-color: #fff;
+  padding: 3rem 1rem 4rem;
+  display: flex;
+  justify-content: center;
 }
+
+.presentation .container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  animation: cardFadeIn 0.9s ease-out 0.3s both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.presentation h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.presentation p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* animation d'arrivée de la carte */
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* léger effet au survol */
+.presentation .container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.16);
+}
+
+/* CTA à l’intérieur de la carte À propos */
+.presentation .container .cta-inside {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 14px 34px;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  color: #111;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.presentation .container .cta-inside:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.26);
+}
+
+
+/* FOOTER */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #111;
+  color: #fff;
+}
+
 
 /* Section des véhicules */
 .vehicles {
