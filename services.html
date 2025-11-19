@@ -1,55 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nos Services - Concession Auto</title>
+  <title>Nos services - Concession Auto</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
   <!-- Barre de navigation -->
-  <header>
-    <nav class="navbar">
-      <a href="index.html" class="logo">Concession Auto</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="vehicules.html">Nos véhicules</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<nav class="navbar">
+  <a href="index.html" class="logo">Concession Auto</a>
 
-  <!-- Section des services -->
-  <section class="services">
-    <div class="container">
-      <h2>Nos Services</h2>
-      <div class="services-list">
-        <!-- Service 1 -->
-        <div class="service-card">
-          <img src="images/financement.jpg" alt="Financement" class="service-icon">
-          <h3>Financement</h3>
-          <p>Nous vous proposons des solutions de financement adaptées à votre budget.</p>
-        </div>
+  <div class="nav-center">
+    <ul class="nav-links">
+      <li><a href="vehicules.html">Nos véhicules</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-        <!-- Service 2 -->
-        <div class="service-card">
-          <img src="images/entretien.jpg" alt="Entretien" class="service-icon">
-          <h3>Entretien</h3>
-          <p>Nous offrons des services d'entretien pour maintenir votre véhicule en parfait état.</p>
-        </div>
 
-        <!-- Service 3 -->
-        <div class="service-card">
-          <img src="images/garantie.jpg" alt="Garantie" class="service-icon">
-          <h3>Garantie</h3>
-          <p>Profitez de garanties étendues pour assurer votre véhicule et votre tranquillité d'esprit.</p>
-        </div>
+  <!-- Contenu principal -->
+  <main class="page-content">
+
+    <!-- Bandeau titre Services -->
+    <section class="services-hero">
+      <div class="container">
+        <h1>
+          Nos services
+          <span class="section-underline"></span>
+        </h1>
+        <p>
+          Des prestations haut de gamme pour accompagner votre véhicule avant, pendant 
+          et après l’achat. Un seul objectif&nbsp;: votre confort et votre tranquillité.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Cartes de services -->
+    <section class="services">
+      <div class="container services-grid">
+
+        <!-- Service 1 : Financement -->
+        <div class="service-card">
+          <div class="service-icon">F</div>
+          <h3>Financement sur-mesure</h3>
+          <p>
+            Des solutions de financement adaptées à votre profil et à votre projet,
+            avec des mensualités maîtrisées.
+          </p>
+          <ul>
+            <li>Dossiers étudiés rapidement</li>
+            <li>Crédit classique, LOA, LLD</li>
+            <li>Partenaires bancaires sélectionnés</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 : Entretien -->
+        <div class="service-card">
+          <div class="service-icon">E</div>
+          <h3>Entretien &amp; suivi</h3>
+          <p>
+            Un atelier dédié à l’entretien et aux révisions de votre véhicule 
+            pour garantir ses performances dans le temps.
+          </p>
+          <ul>
+            <li>Révisions constructeur</li>
+            <li>Diagnostics complets</li>
+            <li>Pièces d’origine ou équivalentes qualité</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 : Garanties -->
+        <div class="service-card">
+          <div class="service-icon">G</div>
+          <h3>Garanties étendues</h3>
+          <p>
+            Prolongez votre sérénité après l’achat grâce à nos garanties complètes 
+            sur le véhicule et ses principaux organes.
+          </p>
+          <ul>
+            <li>Extension de garantie jusqu’à plusieurs années</li>
+            <li>Couverture mécanique et électronique</li>
+            <li>Assistance en cas d’immobilisation</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- CTA bas de page -->
+      <div class="services-cta">
+        <p>Vous avez un projet ou une question sur nos services&nbsp;?</p>
+        <a href="contact.html" class="btn services-btn">Prendre contact</a>
+      </div>
+    </section>
+
+  </main>
 
   <!-- Footer -->
   <footer>
@@ -58,5 +106,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
