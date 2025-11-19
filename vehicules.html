@@ -1,51 +1,131 @@
-<section class="vehicles">
-  <div class="container">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos véhicules - MG Cars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <nav class="navbar">
-  <a href="index.html" class="logo">Concession Auto</a>
+    <!-- En-tête -->
+    <header>
+        <div class="header-container">
+            <h1 class="logo">MG Cars</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="vehicules.html" class="active">Véhicules</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <div class="nav-center">
-    <ul class="nav-links">
-      <li><a href="vehicules.html">Nos véhicules</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+    <!-- Contenu principal -->
+    <main>
+        <section class="hero-vehicules">
+            <h2>Nos véhicules d’exception</h2>
+            <p>Sélection de voitures haut de gamme soigneusement choisies pour vous.</p>
+        </section>
 
-    <h2>Nos véhicules disponibles</h2>
-    <div class="vehicle-grid">
-      <!-- Première voiture -->
-      <div class="vehicle-card">
-        <img src="images/téléchargement (1).jpg" alt="Voiture 1">
-        <h3>Marque A - Modèle 1</h3>
-        <p>Prix : 20 000 €</p>
-        <a href="#" class="vehicle-link" data-vehicle="1">En savoir plus</a>
-      </div>
+        <section class="vehicle-section">
+            <div class="vehicle-grid">
 
-      <!-- Deuxième voiture -->
-      <div class="vehicle-card">
-        <img src="images/téléchargement.jpg" alt="Voiture 2">
-        <h3>Marque B - Modèle 2</h3>
-        <p>Prix : 25 000 €</p>
-        <a href="#" class="vehicle-link" data-vehicle="2">En savoir plus</a>
-      </div>
+                <!-- Bentley -->
+                <article class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="images/bentlay.jpg" alt="Bentley Continental GT noire">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Bentley Continental GT</h3>
+                        <p class="vehicle-info">2022 • 12 000 km • V12</p>
+                        <p class="vehicle-price">249 900 €</p>
+                        <a href="#" class="btn btn-detail" data-car="bentley">Voir le détail</a>
+                    </div>
+                </article>
 
-      <!-- Troisième voiture -->
-      <div class="vehicle-card">
-        <img src="images/téléchargement (1).jpg" alt="Voiture 3">
-        <h3>Marque C - Modèle 3</h3>
-        <p>Prix : 18 000 €</p>
-        <a href="#" class="vehicle-link" data-vehicle="3">En savoir plus</a>
-      </div>
+                <!-- McLaren 720s -->
+                <article class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="images/mclaren.avif" alt="McLaren 720S noire">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>McLaren 720S</h3>
+                        <p class="vehicle-info">2021 • 8 500 km • V8 Biturbo</p>
+                        <p class="vehicle-price">229 000 €</p>
+                        <a href="#" class="btn btn-detail" data-car="mclaren">Voir le détail</a>
+                    </div>
+                </article>
 
-      <!-- Quatrième voiture -->
-      <div class="vehicle-card">
-        <img src="images/gt3rs.jpg" alt="Voiture 4">
-        <h3>Marque D - Modèle 4</h3>
-        <p>Prix : 30 000 €</p>
-        <a href="#" class="vehicle-link" data-vehicle="4">En savoir plus</a>
-      </div>
+                <!-- Porsche Turbo S -->
+                <article class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="images/turbo s.jpg" alt="Porsche 911 Turbo S verte">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Porsche 911 Turbo S</h3>
+                        <p class="vehicle-info">2020 • 15 300 km • PDK</p>
+                        <p class="vehicle-price">199 900 €</p>
+                        <a href="#" class="btn btn-detail" data-car="turboS">Voir le détail</a>
+                    </div>
+                </article>
+
+                <!-- Porsche GT3RS -->
+                <article class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="images/gt3rs.jpg" alt="Porsche GT3 RS grise">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Porsche 911 GT3 RS</h3>
+                        <p class="vehicle-info">2019 • 9 800 km • Atmosphérique</p>
+                        <p class="vehicle-price">219 500 €</p>
+                        <a href="#" class="btn btn-detail" data-car="gt3rs">Voir le détail</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2025 MG Cars – Véhicules haut de gamme & services sur mesure.</p>
+    </footer>
+
+
+    <!-- 🚗 MODAL DETAIL VÉHICULE -->
+    <div id="car-modal" class="modal">
+        <div class="modal-overlay"></div>
+
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+
+            <div class="modal-body">
+                
+                <div class="modal-image-wrapper">
+                    <img id="modal-img" src="" alt="">
+                </div>
+
+                <div class="modal-text">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-subtitle" class="modal-subtitle"></p>
+
+                    <p id="modal-price" class="modal-price"></p>
+
+                    <h4>Caractéristiques</h4>
+                    <ul id="modal-specs" class="modal-specs"></ul>
+
+                    <h4>Description</h4>
+                    <p id="modal-description"></p>
+                </div>
+
+            </div>
+
+        </div>
     </div>
-  </div>
-</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
