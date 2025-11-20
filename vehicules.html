@@ -8,19 +8,18 @@
 </head>
 <body>
 
-    <!-- En-tête -->
-<!-- Barre de navigation -->
-<nav class="navbar">
-    <a href="index.html" class="logo">MG CARS</a>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">MG CARS</a>
 
-    <div class="nav-center">
-        <ul class="nav-links">
-            <li><a href="vehicules.html" class="active">Véhicules</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+        <div class="nav-center">
+            <ul class="nav-links">
+                <li><a href="vehicules.html" class="active">Véhicules</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Contenu principal -->
     <main>
@@ -35,17 +34,17 @@
                 <!-- Bentley -->
                 <article class="vehicle-card">
                     <div class="vehicle-image">
-                        <img src="images/bentlay.jpg" alt="Bentley Continental GT noire">
+                        <img src="images/bentlay.jpg" alt="Bentley Continental GT blanche">
                     </div>
                     <div class="vehicle-content">
                         <h3>Bentley Continental GT</h3>
-                        <p class="vehicle-info">2022 • 12 000 km • V12</p>
+                        <p class="vehicle-info">2022 • 12 000 km • W12</p>
                         <p class="vehicle-price">249 900 €</p>
                         <a href="#" class="btn btn-detail" data-car="bentley">Voir le détail</a>
                     </div>
                 </article>
 
-                <!-- McLaren 720s -->
+                <!-- McLaren 720S -->
                 <article class="vehicle-card">
                     <div class="vehicle-image">
                         <img src="images/mclaren.avif" alt="McLaren 720S noire">
@@ -58,7 +57,7 @@
                     </div>
                 </article>
 
-                <!-- Porsche Turbo S -->
+                <!-- Porsche 911 Turbo S -->
                 <article class="vehicle-card">
                     <div class="vehicle-image">
                         <img src="images/turbo s.jpg" alt="Porsche 911 Turbo S verte">
@@ -71,10 +70,10 @@
                     </div>
                 </article>
 
-                <!-- Porsche GT3RS -->
+                <!-- Porsche 911 GT3 RS -->
                 <article class="vehicle-card">
                     <div class="vehicle-image">
-                        <img src="images/gt3rs.jpg" alt="Porsche GT3 RS grise">
+                        <img src="images/gt3rs.jpg" alt="Porsche 911 GT3 RS grise">
                     </div>
                     <div class="vehicle-content">
                         <h3>Porsche 911 GT3 RS</h3>
@@ -84,22 +83,71 @@
                     </div>
                 </article>
 
+                <!-- Ferrari F8 Tributo -->
+                <article class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="images/f8.jpg" alt="Ferrari F8 Tributo rouge">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Ferrari F8 Tributo</h3>
+                        <p class="vehicle-info">2022 • 6 200 km • V8 Biturbo</p>
+                        <p class="vehicle-price">289 900 €</p>
+                        <a href="#" class="btn btn-detail" data-car="f8">Voir le détail</a>
+                    </div>
+                </article>
+
+                <!-- Lamborghini Huracán STO -->
+                <article class="vehicle-card">
+                    <div class="vehicle-image">
+                        <img src="images/huracan.jpg" alt="Lamborghini Huracán STO bleue">
+                    </div>
+                    <div class="vehicle-content">
+                        <h3>Lamborghini Huracán STO</h3>
+                        <p class="vehicle-info">2023 • 3 800 km • V10 Atmosphérique</p>
+                        <p class="vehicle-price">339 900 €</p>
+                        <a href="#" class="btn btn-detail" data-car="huracan">Voir le détail</a>
+                    </div>
+                </article>
+<!-- BMW M8 Competition -->
+<article class="vehicle-card">
+  <div class="vehicle-image">
+    <img src="images/BMWM8.jpg" alt="BMW M8 Competition noire">
+  </div>
+  <div class="vehicle-content">
+    <h3>BMW M8 Competition</h3>
+    <p class="vehicle-info">2022 • 9 400 km • V8 4.4L Biturbo</p>
+    <p class="vehicle-price">149 900 €</p>
+    <a href="#" class="btn btn-detail" data-car="bmwm8">Voir le détail</a>
+  </div>
+</article>
+
+<!-- Bugatti Chiron Super Sport 300+ -->
+<article class="vehicle-card">
+  <div class="vehicle-image">
+    <img src="images/Bugatti.jpg" alt="Bugatti Chiron Super Sport 300+">
+  </div>
+  <div class="vehicle-content">
+    <h3>Bugatti Chiron Super Sport 300+</h3>
+    <p class="vehicle-info">2021 • 2 100 km • W16 Quadri-turbo</p>
+    <p class="vehicle-price">3 990 000 €</p>
+    <a href="#" class="btn btn-detail" data-car="chiron300">Voir le détail</a>
+  </div>
+</article>
+
             </div>
         </section>
     </main>
 
     <!-- Pied de page -->
-<footer>
-  <p>© 2025 MG CARS – Tous droits réservés.</p>
-  <p class="footer-links">
-    <a href="mentions.html">Mentions légales</a> |
-    <a href="rgpd.html">Politique de confidentialité</a>
-  </p>
-</footer>
+    <footer>
+        <p>© 2025 MG CARS – Tous droits réservés.</p>
+        <p class="footer-links">
+            <a href="mentions.html">Mentions légales</a> |
+            <a href="rgpd.html">Politique de confidentialité</a>
+        </p>
+    </footer>
 
-
-
-    <!-- 🚗 MODAL DETAIL VÉHICULE -->
+    <!-- MODAL DÉTAIL VÉHICULE -->
     <div id="car-modal" class="modal">
         <div class="modal-overlay"></div>
 
@@ -107,7 +155,6 @@
             <button class="modal-close">&times;</button>
 
             <div class="modal-body">
-                
                 <div class="modal-image-wrapper">
                     <img id="modal-img" src="" alt="">
                 </div>
@@ -124,9 +171,7 @@
                     <h4>Description</h4>
                     <p id="modal-description"></p>
                 </div>
-
             </div>
-
         </div>
     </div>
 
