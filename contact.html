@@ -4,31 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Concession Auto</title>
+  <title>Contact - MG CARS</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Barre de navigation -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Concession Auto</div>
+
+  <!-- Barre de navigation premium -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">MG CARS</a>
+
+    <div class="nav-center">
       <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="vehicules.html">Nos véhicules</a></li>
+        <li><a href="vehicules.html">Véhicules</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <!-- Section de contact -->
   <section class="contact">
     <div class="container">
       <h2>Contactez-nous</h2>
       
-      <!-- Formulaire de contact -->
+      <!-- Formulaire -->
       <form action="#" method="post" class="contact-form">
+
         <div class="form-group">
           <label for="name">Nom :</label>
           <input type="text" id="name" name="name" required placeholder="Votre nom">
@@ -47,20 +49,19 @@
         <button type="submit" class="btn">Envoyer</button>
       </form>
 
-      <!-- Informations de contact et carte -->
+      <!-- Informations + Carte -->
       <div class="contact-info">
         <h3>Nos coordonnées</h3>
 
-        <p><strong>Adresse :</strong>  
+        <p><strong>Adresse :</strong><br>
         58 Avenue de Saint-Germain, 95220 Herblay-sur-Seine, France</p>
 
-        <p><strong>Téléphone :</strong>  
+        <p><strong>Téléphone :</strong><br>
         +33 1 84 60 12 45</p>
 
-        <p><strong>Email :</strong>  
-        contact@concessionauto-paris.fr</p>
+        <p><strong>Email :</strong><br>
+        contact@mgcars.fr</p>
 
-        <!-- Google Map -->
         <h3>Où nous trouver ?</h3>
 
         <iframe 
@@ -68,7 +69,7 @@
           width="100%" 
           height="400" 
           style="border:0;" 
-          allowfullscreen="" 
+          allowfullscreen=""
           loading="lazy">
         </iframe>
 
@@ -77,8 +78,8 @@
   </section>
 
   <footer>
-    <p>© 2025 – Concession Auto – Tous droits réservés.</p>
+    <p>© 2025 – MG CARS – Tous droits réservés.</p>
   </footer>
-</body>
 
+</body>
 </html>
